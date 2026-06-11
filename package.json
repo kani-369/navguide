@@ -1,0 +1,16 @@
+{
+  "name": "navguide-workspace",
+  "version": "1.0.0",
+  "description": "NavGuide - AI Educational Mentor Workspace",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "preview": "npm run preview --prefix client"
+  },
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
